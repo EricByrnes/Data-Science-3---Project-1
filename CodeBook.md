@@ -12,7 +12,7 @@ Original data set used for this project is the
 <li><b>mode</b> - experimental group - "test" or "train"
 </ol>
 
-<b>short_data.txt</b> - this data set contains the following subset of variables from the main data set; see features.txt and features_info.txt in downloaded data for a complete list of fields and more information on their meanings (the numbers are the original column numbers from the features.txt data set):
+<b>short_data.txt</b> - this data set contains the following subset of variables from the main data set; see features.txt and features_info.txt in downloaded data for a complete list of fields and more information on their meanings and units of measure (the numbers are the original column numbers from the features.txt data set):
 <ol>
 <li><b>1 tBodyAcc-mean()-X</b>
 <li><b>2 tBodyAcc-mean()-Y</b>
