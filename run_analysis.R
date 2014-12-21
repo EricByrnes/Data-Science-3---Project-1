@@ -2,13 +2,17 @@
 # https://github.com/EricByrnes/Smartphone_Accelerometer/blob/master/README.md
 #
 # Setup variables:
-#   data.filepath (string) - path to file containing data in the 'Electric
-#     power consumption' format. Several options are supported:
+#   data.filepath (string) - path to file containing data. Several options are
+#     supported:
 #     - if data.filepath starts with "http://", "https://" or "ftp://", the
 #       function will attempt to download the file, otherwise it will attempt
 #       to load the file locally
-#     - if the file extension is ".zip", the file is unzipped to the current
-#       directory and the first (or only) file is assumed to be the data file
+#     - if the file extension is ".zip", the file is unzipped to the directory
+#       indicated by data.localpath
+#   data.localpath (string) - directory to extract ZIP file contents to
+#   data.outpath (string) - directory to write tidy output files to
+#   write.full.data (boolean) - if TRUE, write the large initial data set with
+#     all observations (this may be very large)
 #   verbose (boolean) - if TRUE, the function emits verbose diagnostic
 #     messages.
 #
@@ -16,14 +20,15 @@
 #
 # Examples:
 #   # perform analysis
-#   data.filepath <- "https://d396qusza40orc.cloudfront.net/exdata/data/household_power_consumption.zip"
+#   data.filepath <- "https://d396qusza40orc.cloudfront.net/exdata/data/NEI_data.zip"
+#   data.localpath <- ".\\"
+#   data.outpath <- ".\\"
 #   verbose <- TRUE
 
 # Setup variables
-data.filepath <- "https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip"
-data.localpath <- ".\\data\\"
+data.filepath <- "https://d396qusza40orc.cloudfront.net/exdata/data/NEI_data.zip"
+data.localpath <- ".\\"
 data.outpath <- ".\\"
-write.full.data <- TRUE
 verbose <- TRUE
 
 # BEGIN - Common file handling

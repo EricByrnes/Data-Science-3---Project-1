@@ -95,4 +95,4 @@ Original data set used for this project is the
 <li><b>552 fBodyBodyGyroJerkMag-meanFreq()</b>
 </ol>
 
-<b>mean_data.txt</b> - contains mean values by subject and activity for each of the values found in short_data.txt. The column/variable names used remain the same.
+<b>mean_data.txt</b> - contains mean values by subject and activity for each of the values found in short_data.txt. The column/variable names used remain the same. All variables with the name pattern ".mean" (after conversion to column name format) are included in this set.
